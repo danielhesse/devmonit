@@ -1,0 +1,23 @@
+{
+  "name": "devmonit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/core": "^1.2.162",
+    "@swc/jest": "^0.2.20",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "@types/uuid": "^8.3.4",
+    "jest": "^27.5.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
