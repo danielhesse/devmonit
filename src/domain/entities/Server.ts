@@ -1,10 +1,10 @@
 import { Entity } from "../../core/domain/Entity";
 
 type ServerProps = {
-  userId: string;
+  accountId: string;
   name: string;
   description: string;
-  url: string;
+  url?: string;
 }
 
 export class Server extends Entity<ServerProps> {
