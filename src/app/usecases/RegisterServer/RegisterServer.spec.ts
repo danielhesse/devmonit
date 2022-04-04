@@ -8,12 +8,6 @@ let registerServer: RegisterServer;
 let account: Account;
 
 describe("Register server use case", () => {
-  beforeEach(() => {
-    const serversRepository = new InMemoryServersRepository();
-
-    registerServer = new RegisterServer(serversRepository);
-  });
-
   beforeAll(() => {
     const accountsRepository = new InMemoryAccountsRepository();
 
@@ -22,6 +16,12 @@ describe("Register server use case", () => {
       email: "aiden.lyons@devmonit.com",
       phone: "11923456789"
     });
+  });
+
+  beforeEach(() => {
+    const serversRepository = new InMemoryServersRepository();
+
+    registerServer = new RegisterServer(serversRepository);
   });
 
   it("should be able to register a new server", async () => {

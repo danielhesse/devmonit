@@ -13,6 +13,14 @@ export class InMemoryServersRepository implements IServersRepository {
     return server;
   }
 
+  findById(id: string): Server | null {
+    const server = this.repository.find(server => server.id === id);
+
+    if (!server) return null;
+
+    return server;
+  }
+
   findByName(name: string): Server | null {
     const server = this.repository.find(server => server.props.name === name);
 
